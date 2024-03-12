@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Guess the nuber</h1>
+    <button onclick="myFunction(987)">Guess...</button>
+    <p id="demo"></p>
+    <script>
+        //const myNumber = 239.97;
+        function myFunction(myNumber) {
+            let number = prompt("Please enter a number", "from 0 to 1000")
+            if (number == myNumber) {
+                alert("correct!")
+            } else if (number < myNumber) {
+                alert("Your number is less than N");
+                myFunction();
+            } else if (number > myNumber) {
+                alert("your numer is bigger than N")
+                myFunction();
+            } else {
+                alert("Pon un numero")
+            }
+        }
+    </script>
+
+</body>
+
+</html>

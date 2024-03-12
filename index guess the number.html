@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Guess the nuber</h1>
+<button onclick="myFunction()">Guess...</button>
+<p id="demo"></p>
+<script>
+const myNumber = 239.97;
+function myFunction() {
+    let number = prompt("Please enter a number","from 0 to 1000")
+    if (number == myNumber) {
+        alert("correct!")
+    } else {
+        myFunction();
+    }
+}
+</script>
+
+</body>
+</html>
